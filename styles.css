@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+}
+
+#title {
+    font-size: 35px;
+}
+
+.scrollable-container {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Keeps all cards in a single row */
+    padding: 10px 0; /* Optional: Add padding for better appearance */
+}
+
+/* Card styling */
+.card {
+    display: inline-block; /* Keeps cards in a single row */
+    width: 18rem; /* Width of each card */
+    margin-right: 10px; /* Space between cards */
+    vertical-align: top; /* Aligns cards to the top */
+}
+
+/* Optional: Add some styles for better aesthetics */
+.card-img-top {
+    height: 150px; /* Fixed height for card images */
+    object-fit: cover; /* Ensures image covers the area */
+}
+
+
+/* Box styling */
+.box {
+    display: inline-block;
+    width: 120px;
+    /* Set width to fit 8 boxes in view */
+    height: 120px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 100px;
+    /* Center text vertically */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#myDIV {
+    /* margin-left: 50px; */
+    width: 30%;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-top: 5px solid;
+    border-top-width: thick;
+}
+.justified-paragraph {
+    text-align: justify; /* Justifies the text */
+    margin-top: 20px; /* Space above the paragraph */
+    text-indent: 30px; /* Space at the start of the paragraph */
+}
+#sign{
+    background-color: white;
+    color: black;
+    margin-right: 5px;
+}
+#login{
+    background-color: white;
+    color: black;
+    margin-right: 5px;
+}
+
+
+.card {
+width: 18rem; /* Adjust card width as needed */
+margin-right: 10px; /* Space between cards */
+}
+
+.card-body {
+word-wrap: break-word; /* Break long words onto the next line */
+}
+
+.card-text {
+overflow-wrap: break-word; /* Ensure text wraps within the card */
+white-space: normal; /* Allow text to wrap to the next line */
+max-height: 4.5em; /* Limit the height if desired */
+overflow: hidden; /* Hide overflow content if necessary */
+}
+a{
+text-decoration: none;
+}
+
+
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+}
+
+
+

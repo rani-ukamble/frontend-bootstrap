@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stanley's Pharmacy</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #sign,
+        #login {
+            background-color: white;
+            color: black;
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container-fluid {
+            display: flex;
+            padding: 0;
+        }
+
+        .left {
+            /* background-color: aqua; */
+            min-height: 100vh;
+            margin-top: 15px;
+        }
+
+        .right {
+            /* background-color: rgb(240, 107, 5); */
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .square-list {
+            list-style-type: none;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .square-list li::before {
+            content: "■";
+            padding-right: 10px;
+        }
+
+        #list {
+            padding: 15px;
+            /* border: 1px black solid; */
+        }
+
+        .scrollable-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px 0;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            /* Additional spacing between cards */
+        }
+
+        #myDIV {
+            /* margin-left: 50px; */
+            width: 70%;
+            height: 2px;
+            background-color: #FFFFFF;
+            border-top: 5px solid;
+            border-top-width: thick;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-1" id="title">Stanley's Pharmacy</a>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-light me-3" type="submit" id="sign"><a href="signup.html" style="text-decoration: none; color: green;">Sign Up</a></button>
+                <button class="btn btn-outline-light" type="submit" id="login" style="text-decoration: none; color: green;"><a href="login.html">Login</a></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="left w-25 d-flex flex-column align-items-left py-4" id="list">
+            <ul class="square-list">Category
+
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+            </ul>
+            <ul class="square-list">Sub Category
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+                <li><input class="form-check-input" type="checkbox" id="terms"
+                        required>___________________________________________</li>
+            </ul>
+            <ul class="square-list">Sub Category
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                ___________________________________________ 5
+                ___________________________________________ 24
+                ___________________________________________ 1
+                ___________________________________________ 15
+                ___________________________________________ 45
+                ___________________________________________ 23
+            </ul>
+        </div>
+
+        <div class="right w-75">
+            <div class="container my-5">
+                <div class="row">
+                    <!-- Row 1 with 4 cards -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 1</h5>
+                                <p class="card-text">Example text for Card 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                
+                                <h5 class="card-title">Card 2</h5>
+                                <p class="card-text">Example text for Card 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 3</h5>
+                                <p class="card-text">Example text for Card 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 4</h5>
+                                <p class="card-text">Example text for Card 4.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 with 4 cards -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 5</h5>
+                                <p class="card-text">Example text for Card 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 6</h5>
+                                <p class="card-text">Example text for Card 6.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 7</h5>
+                                <p class="card-text">Example text for Card 7.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 8</h5>
+                                <p class="card-text">Example text for Card 8.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 3 with 4 cards -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 9</h5>
+                                <p class="card-text">Example text for Card 9.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 10</h5>
+                                <p class="card-text">Example text for Card 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 11</h5>
+                                <p class="card-text">Example text for Card 11.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <div id="myDIV"></div>
+                                <h5 class="card-title">Card 12</h5>
+                                <p class="card-text">Example text for Card 12.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
